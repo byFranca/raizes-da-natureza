@@ -125,8 +125,16 @@ Por ser um projeto estático, basta abrir os arquivos diretamente no navegador:
 ## **Autores**
 
 
+---
+
+## 👥 Autores
+
+| [<img src="https://github.com/Miguel-franca19.png" width="80" style="border-radius:50%"/>](https://github.com/Miguel-franca19) | [<img src="https://github.com/LuisOtavioSalesMendes.png" width="80" style="border-radius:50%"/>](https://github.com/LuisOtavioSalesMendes) |
+|:---:|:---:|
 | **Miguel França** | **Luis Otávio** |
-| https://github.com/Miguel-franca19 | git do luisao |
+| [github.com/Miguel-franca19](https://github.com/Miguel-franca19) | [github.com/LuisOtavioSalesMendes](https://github.com/LuisOtavioSalesMendes) |
+
+---
 
 
 <p align="center">
