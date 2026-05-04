@@ -1,8 +1,8 @@
 //Miguel França
+const carrinho = [];
 
-const cardProds = document.querySelectorAll(".mini_card-desque");
 const tela = document.getElementById("obrigado");
-const mensagem = document.getElementById("mensagem")
+const mensagem = document.getElementById("mensagem");
 
 function mostrarMensagem() {
     tela.classList.add("boo");
@@ -11,19 +11,21 @@ function esconderMensagem() {
     tela.classList.remove("boo");
 }
 
+const cardProds = document.querySelectorAll(".mini_card-desque");
 cardProds.forEach(prod => {
     const btnAdd = prod.querySelector(".btn-add");
 
     btnAdd.addEventListener("click", function () {
-        const nomeProd = prod.querySelector(".nome");
-        const precoProd = prod.querySelector(".preco");
-        const imgProd = prod.querySelector("img");
-
-        const imagem = imgProd.getAttribute("src");
+        const nomeProd = prod.querySelector(".nome").innerHTML; //nome do produto
+        const precoProd = prod.querySelector(".preco").innerHTML;   //preco do produto
+        const imgProd = prod.querySelector("img").getAttribute("src");  //imagem (src)
+        console.log(nomeProd);
+        console.log(precoProd);
+        console.log(imgProd);
 
         localStorage.setItem("nomeProduto", nomeProd.textContent);
         localStorage.setItem("precoProduto", precoProd.textContent);
-        localStorage.setItem("imgProduto", imagem);
+        localStorage.setItem("imgProduto", imgProd);
 
         mensagem.innerHTML = `
         <h2>Produto Adicionado ao carrinho</h2>
@@ -35,6 +37,6 @@ cardProds.forEach(prod => {
                 <button class="btn-fechar" onclick="esconderMensagem()">Fechar</button>
         `;
 
-        mostrarMensagem()
+    
     });
 });
