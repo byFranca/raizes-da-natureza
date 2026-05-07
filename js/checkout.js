@@ -49,6 +49,7 @@ function verificaCampos() {
     } else {
         btn.classList.add("nao");
         btn.disabled = true;
+        msg.classList.remove("acerto");
         msg.classList.add("erro");
         msg.innerText = "Preencha todos os campos!!";
     }
